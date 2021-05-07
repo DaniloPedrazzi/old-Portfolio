@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+body{
+    background-color: #1c1c1c;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #111111;
+    box-shadow: 0 0 0.5rem 0 rgb(17 17 17 / 70%);
+    cursor: default;
+    z-index: 10000;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    margin: 0 0.75rem;
+    padding: 0;
+}
+
+a.logo
+{
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    font-size: 24;
+    line-height: 1,3;
+    letter-spacing: -1,5;
+    transition-duration: 0.3s;
+}
+a.logo:hover
+{
+    color: #6843c5;
+}
+
+a.botoes_menu
+{
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    font-size: 18;
+    line-height: 1,3;
+    letter-spacing: -1,5;
+    transition-duration: 0.3s;
+}
+a.botoes_menu:hover
+{
+    color: #a480ff;
+}
+
+h2.Titulo{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    padding-top: 110px;
+    font-size: 36;
+    line-height: 1,3;
+    letter-spacing: -1,5;
+}
+
+hr.Degrade{
+    margin-top: -13px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 15px;
+    width: 12rem;
+    height: 4px;
+    background-image: linear-gradient(90deg, #a480ff, #532eaf);
+}
+
+p.Descricao{
+    font-family: 'Overpass', sans-serif;
+    color: #EBEBEB;
+}
