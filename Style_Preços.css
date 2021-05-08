@@ -97,3 +97,72 @@ hr.Degrade{
 }
 
 /* RESTO */
+
+table
+{
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th.TituloTabela
+{
+    transform:translatex(12px);
+    font-size: 18;
+    color: white;
+    padding: 10px;
+}
+
+th.TituloPreçoTabela
+{
+    text-align: center;
+    transform:translatex(5px);
+    font-size: 18;
+    color: white;
+    padding: 10px;
+}
+
+a.PreçoTabela
+{
+    text-decoration: none;
+    font-size: 15;
+    font-family: 'Overpass', sans-serif;
+    color: #a480ff;
+    transition-duration: 0.2s;
+}
+
+a.PreçoTabela:hover
+{
+    transition-duration: 0.2s;
+    color: #532eaf;
+}
+
+th.PreçoTabela
+{
+    text-align: center;
+    font-size: 15;
+    font-family: 'Overpass', sans-serif;
+    color: #a480ff;
+    padding: 22px;
+    border-bottom: 0.09em solid #cecece;
+}
+
+th, td 
+{
+    text-align: left;
+    font-size: 15;
+    font-family: 'Overpass', sans-serif;
+    color: #cecece;
+    padding: 22px;
+    border-bottom: 0.09em solid #cecece;
+}
+
+p.Descricao{
+    font-family: 'Overpass', sans-serif;
+    color: #EBEBEB;
+    font-size: 20px;
+}
+
+p.Descricao2{
+    font-family: 'Overpass', sans-serif;
+    color: #EBEBEB;
+}
