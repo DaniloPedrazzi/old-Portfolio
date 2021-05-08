@@ -5,6 +5,8 @@ body{
     background-color: #1c1c1c;
 }
 
+/* HEADER */
+
 header{
     position: fixed;
     top: 0;
@@ -37,19 +39,25 @@ li{
     padding: 0;
 }
 
-a.logo
+img.Logo1
 {
-    text-decoration: none;
-    font-family: 'Baloo 2', cursive;
-    color: white;
-    font-size: 24;
-    line-height: 1,3;
-    letter-spacing: -1,5;
+    position: absolute;
+    margin-top: 5px;
+    height: 55px;
     transition-duration: 0.3s;
 }
-a.logo:hover
+
+img.Logo2
 {
-    color: #6843c5;
+    position: relative;
+    margin-top: 5px;
+    height: 55px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+img.Logo2:hover
+{
+    opacity: 100;
 }
 
 a.botoes_menu
@@ -66,6 +74,8 @@ a.botoes_menu:hover
 {
     color: #a480ff;
 }
+
+/* TITULO */
 
 h2.Titulo{
     font-family: 'Overpass', sans-serif;
@@ -86,7 +96,4 @@ hr.Degrade{
     background-image: linear-gradient(90deg, #a480ff, #532eaf);
 }
 
-p.Descricao{
-    font-family: 'Overpass', sans-serif;
-    color: #EBEBEB;
-}
+/* RESTO */
