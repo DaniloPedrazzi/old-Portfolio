@@ -14,6 +14,14 @@ $Compra = $_POST["Compra"];
 $Outro = $_POST["Outro"];
 $Area = $_POST["area"];
 
+
+$emailx = "xcuelho.space"
+$assunto = "Mensagem proveniente do portfolio"
+$mensagem = "Nome: $nome /n
+Email: $Email/n
+Mensagem: $Area"
+mail ( string $emailx , string $assunto , string $mensagem) : bool
+
 echo "Nome:".$nome."<br>";
 echo "Email:".$Email."<br>";
 echo "Compra:".$Compra."<br>";
