@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Contato</title>
+        <title>Contato - xCUELHO</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel = "stylesheet" href = "Style_Contato.css">
     </head>
@@ -29,8 +29,19 @@
         <h2 class="Titulo">Contato</h2>
         <hr class="Degrade">
         </center>
-
         <! RESTO !>
-
+        <form method="post" action="Resultados.php">
+            <input class="caixa" type="text" name="Nome" placeholder="Nome">
+            <input class="caixa" type="email" name="email" placeholder="Email"><br>
+            <label class="container">Compra
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Outro
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <textarea style="resize: vertical;" placeholder="Mensagem" name="area"></textarea><br>
+            <input class="botão" type="submit" value="Enviar">
     </body>
 </html>
