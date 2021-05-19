@@ -15,7 +15,7 @@ $Outro = $_POST["Outro"];
 $Area = $_POST["area"];
 
 
-$emailx = "xcuelho.space"
+$emailx = "danilo.justino1@gmail.com"
 $assunto = "Mensagem proveniente do portfolio"
 $mensagem = "Nome: $nome /n
 Email: $Email/n
