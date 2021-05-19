@@ -1,224 +1,263 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
-
-body{
-    background-color: #1c1c1c;
+body {
+  background-color: #1c1c1c;
 }
+
 
 /* HEADER */
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    background-color: #111111;
-    box-shadow: 0 0 0.5rem 0 rgb(17 17 17 / 70%);
-    cursor: default;
-    z-index: 10000;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: #111111;
+  box-shadow: 0 0 0.5rem 0 rgb(17 17 17 / 70%);
+  cursor: default;
+  z-index: 10000;
 }
 
-nav{
-    position: absolute;
-    top: 0;
-    right: 2rem;
+nav {
+  position: absolute;
+  top: 0;
+  right: 2rem;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-li{
-    position: relative;
-    display: inline-block;
-    margin: 0 0.75rem;
-    padding: 0;
+li {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.75rem;
+  padding: 0;
 }
 
-img.Logo1
-{
-    position: absolute;
-    margin-top: 5px;
-    height: 55px;
-    transition-duration: 0.3s;
+img.Logo1 {
+  position: absolute;
+  margin-top: 5px;
+  height: 55px;
+  transition-duration: 0.3s;
 }
 
-img.Logo2
-{
-    position: relative;
-    margin-top: 5px;
-    height: 55px;
-    opacity: 0;
-    transition-duration: 0.3s;
-}
-img.Logo2:hover
-{
-    opacity: 100;
+img.Logo2 {
+  position: relative;
+  margin-top: 5px;
+  height: 55px;
+  opacity: 0;
+  transition-duration: 0.3s;
 }
 
-a.botoes_menu
-{
-    text-decoration: none;
-    font-family: 'Baloo 2', cursive;
-    color: white;
-    font-size: 18;
-    line-height: 1,3;
-    letter-spacing: -1,5;
-    transition-duration: 0.3s;
+img.Logo2:hover {
+  opacity: 100;
 }
-a.botoes_menu:hover
-{
-    color: #a480ff;
+
+a.botoes_menu {
+  text-decoration: none;
+  font-family: 'Baloo 2', cursive;
+  color: white;
+  font-size: 18;
+  line-height: 1, 3;
+  letter-spacing: -1, 5;
+  transition-duration: 0.3s;
 }
+
+a.botoes_menu:hover {
+  color: #a480ff;
+}
+
 
 /* TITULO */
 
-h2.Titulo{
-    font-family: 'Overpass', sans-serif;
-    color: white;
-    padding-top: 110px;
-    font-size: 36;
-    line-height: 1,3;
-    letter-spacing: -1,5;
+h2.Titulo {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  padding-top: 110px;
+  font-size: 36;
+  line-height: 1, 3;
+  letter-spacing: -1, 5;
 }
 
-hr.Degrade{
-    margin-top: -13px;
-    margin-bottom: 40px;
-    border: none;
-    border-radius: 15px;
-    width: 14rem;
-    height: 4px;
-    background-image: linear-gradient(90deg, #a480ff, #532eaf);
+hr.Degrade {
+  margin-top: -13px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 15px;
+  width: 14rem;
+  height: 4px;
+  background-image: linear-gradient(90deg, #a480ff, #532eaf);
 }
+
 
 /* RESTO */
+
+form {
+    text-align: right;
+}
+
+h3{
+  margin-bottom: 20px;
+  margin-right: 27%;
+  margin-top: 55px;
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  font-size: 28;
+  line-height: 1, 3;
+  letter-spacing: -1, 5;
+}
+
 /*nome e email*/
-input.caixa
-{
-    color: white;
-    width: 18%;
-    height: 36px;
-    margin-left: 1%;
-    margin-bottom:20px;
-    border: none;
-    border:solid 1.5px #EBEBEB;
-    border-radius: 5px;
-    background-color: #1c1c1c;
+
+input.caixa {
+  color: white;
+  width: 18%;
+  height: 36px;
+  margin-right: 1%;
+  margin-bottom: 10px;
+  border: none;
+  border: solid 1.5px #EBEBEB;
+  border-radius: 5px;
+  background-color: #1c1c1c;
 }
+input.caixa1 {
+  color: white;
+  width: 18%;
+  height: 36px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  border: none;
+  border: solid 1.5px #EBEBEB;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+}
+
+
+
 /*mensagem*/
-textarea
-{
-    padding-top: 7px;
-    color: white;
-    width: 37%;
-    height: 235px;
-    margin-left: 1%;
-    margin-bottom:20px;
-    border: none;
-    border:solid 1.5px #EBEBEB;
-    border-radius: 5px;
-    background-color: #1c1c1c;
-    transition-duration: 0.3s;
+
+textarea {
+  padding-top: 7px;
+  color: white;
+  width: 37%;
+  height: 235px;
+  margin-right: 10%;
+  margin-top: 10px;
+  border: none;
+  border: solid 1.5px #EBEBEB;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition-duration: 0.3s;
 }
+
+
 /*características gerais*/
-textarea:focus, input:focus, select:focus
-{
-    transition-duration: 0.3s;
-    box-shadow: 0 0 0 0;
-    border: solid 2.5px #532eaf;
-    outline: 0;
-} 
-::placeholder
-{
-    text-align: center;
-    color: #cccc;
-    font-family: 'Overpass', sans-serif;
+
+textarea:focus,
+input:focus,
+select:focus {
+  transition-duration: 0.3s;
+  box-shadow: 0 0 0 0;
+  border: solid 2.5px #532eaf;
+  outline: 0;
 }
+
+::placeholder {
+  text-align: center;
+  color: #cccc;
+  font-family: 'Overpass', sans-serif;
+}
+
+
 /*checkbox*/
-.container 
-{
-    font-family: 'Overpass', sans-serif;
-    color: white;
-    display: inline-block;
-    position: relative;
-    margin-left: 17px;
-    padding-top: 3px;
-    padding-left: 30px;
-    cursor: pointer;
-    font-size: 15px;
+
+.container {
+  margin-right: 12.3%;
+  font-family: 'Overpass', sans-serif;
+  color: white;
+  display: inline-block;
+  position: relative;
+  margin-left: 17px;
+  padding-top: 3px;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 15px;
 }
-.container input 
-{
-    opacity: 0;
-    cursor: pointer;
+
+.container input {
+  opacity: 0;
+  cursor: pointer;
 }
-.checkmark 
-{
-    transition-duration: 0.3s;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
+
+.checkmark {
+  transition-duration: 0.3s;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
 }
-.container:hover input ~ .checkmark 
-{
-    transition-duration: 0.3s;
-    background-color: #ccc;
+
+.container:hover input~.checkmark {
+  transition-duration: 0.3s;
+  background-color: #ccc;
 }
-.container input:checked ~ .checkmark 
-{
-    transition-duration: 0.3s;
-    background-color: #532eaf;
+
+.container input:checked~.checkmark {
+  transition-duration: 0.3s;
+  background-color: #532eaf;
 }
-.checkmark:after 
-{
-    transition-duration: 0.3s;
-    content: "";
-    position: absolute;
-    display: none;
+
+.checkmark:after {
+  transition-duration: 0.3s;
+  content: "";
+  position: absolute;
+  display: none;
 }
-.container input:checked ~ .checkmark:after 
-{
-    transition-duration: 0.3s;
-    display: block;
+
+.container input:checked~.checkmark:after {
+  transition-duration: 0.3s;
+  display: block;
 }
-.container .checkmark:after 
-{
-    transition-duration: 0.3s;
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
+
+.container .checkmark:after {
+  transition-duration: 0.3s;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
+
+
 /*enviar*/
-input.botão
-{
-    margin-top: 17px;
-    cursor: pointer;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    color: white;
-    border: none;
-    background-color: #532eaf;
-    transition-duration: 0.3s;
+
+input.botão {
+  font-size: 15px;
+  margin-right: 21%;
+  cursor: pointer;
+  border-radius: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: white;
+  border: none;
+  background-color: #532eaf;
+  transition-duration: 0.3s;
 }
-input.botão:hover
-{
-    color: #ccc;
-    transition-duration: 0.3s;
-    background-color: #2a0e70;
+
+input.botão:hover {
+  color: #ccc;
+  transition-duration: 0.3s;
+  background-color: #2a0e70;
 }
