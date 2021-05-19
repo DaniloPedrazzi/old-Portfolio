@@ -31,8 +31,10 @@
         </center>
         <! RESTO !>
         <form method="post" action="Resultados.php">
+            
             <input class="caixa" type="text" name="Nome" placeholder="Nome">
             <input class="caixa" type="email" name="email" placeholder="Email"><br>
+            <textarea style="resize: vertical;" placeholder="Mensagem" name="area"></textarea><br>
             <label class="container">Compra
                 <input type="radio" checked="checked" name="radio">
                 <span class="checkmark"></span>
@@ -41,7 +43,8 @@
                 <input type="radio" name="radio">
                 <span class="checkmark"></span>
             </label>
-            <textarea style="resize: vertical;" placeholder="Mensagem" name="area"></textarea><br>
+            <br>
             <input class="botão" type="submit" value="Enviar">
+        </form>
     </body>
 </html>

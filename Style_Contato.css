@@ -144,7 +144,7 @@ textarea:focus, input:focus, select:focus
 {
     font-family: 'Overpass', sans-serif;
     color: white;
-    display: block;
+    display: inline-block;
     position: relative;
     margin-left: 17px;
     padding-top: 3px;
@@ -204,8 +204,9 @@ textarea:focus, input:focus, select:focus
 /*enviar*/
 input.botão
 {
+    margin-top: 17px;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 35px;
