@@ -4,6 +4,22 @@
 body{
     background-color: #1c1c1c;
 }
+body::-webkit-scrollbar 
+{
+    width: 7px;
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background: #1c1c1c;
+}
+  
+body::-webkit-scrollbar-thumb 
+{
+    background-color: #111111;
+    border-radius: 20px;
+    border: none;
+}
 
 /* HEADER */
 
@@ -200,4 +216,32 @@ div.Habilidades
     background: #a480ff;
     height: 30px;
     width: 499;
+}
+
+/* FOOTER */
+
+footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: default;
+    z-index: 10000;
+}
+
+p.footer{
+    font-family: 'Overpass', sans-serif;
+    color: #EBEBEB;
+    font-size: 12px;
+}
+
+hr.footer
+{
+    margin-top: 40px;
+    background-image: linear-gradient(#ffff, #ffff);
+    border: none;
+    border-radius: 15px;
+    width: 90%;
+    height: 0.7px;
 }

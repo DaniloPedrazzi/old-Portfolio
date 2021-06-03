@@ -107,82 +107,116 @@ hr.Degrade{
     margin-bottom: 40px;
     border: none;
     border-radius: 15px;
-    width: 12rem;
+    width: 23rem;
     height: 4px;
     background-image: linear-gradient(90deg, #a480ff, #532eaf);
 }
 
 /* RESTO */
 
-table
-{
-    border-collapse: collapse;
-    width: 50%;
-}
-
-th.TituloTabela
-{
-    transform:translatex(12px);
-    font-size: 18;
-    color: white;
-    padding: 10px;
-}
-
-th.TituloPreçoTabela
-{
-    text-align: center;
-    transform:translatex(5px);
-    font-size: 18;
-    color: white;
-    padding: 10px;
-}
-
-a.PreçoTabela
-{
-    text-decoration: none;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #a480ff;
-    transition-duration: 0.2s;
-}
-
-a.PreçoTabela:hover
-{
-    transition-duration: 0.2s;
-    color: #532eaf;
-}
-
-th.PreçoTabela
-{
-    text-align: center;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #a480ff;
-    padding: 22px;
-    border-bottom: 0.09em solid #cecece;
-}
-
-th, td 
-{
-    text-align: left;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #cecece;
-    padding: 22px;
-    border-bottom: 0.09em solid #cecece;
-}
-
 p.Descricao{
     font-family: 'Overpass', sans-serif;
     color: #EBEBEB;
-    font-size: 20px;
+}
+
+/*DESCRIÇÃO HABILIDADES*/
+
+h3{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    padding-top: 30px;
+    font-size: 23;
+    line-height: 1,3;
+    letter-spacing: -1,5;
+}
+
+hr.Degrade2{
+    margin-top: -13px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    width: 16rem;
+    height: 4px;
+    background-image: linear-gradient(90deg, #a480ff, #532eaf);
+}
+
+p.TituloDescricao2
+{
+    text-align: justify;
+    margin-left: 70px;
+    font-family: 'Overpass', sans-serif;
+    color: #a480ff;
+    font-size: 14;
 }
 
 p.Descricao2{
+    text-align: justify;
+    margin-left: 70px;
     font-family: 'Overpass', sans-serif;
     color: #EBEBEB;
+    font-size: 14;
 }
 
+/*LINHAS DE HABILIDADE*/
+p.Habilidade
+{
+    text-align: justify;
+    margin-top: 7px;
+    margin-left: 20px;
+    font-family: 'Overpass', sans-serif;
+    color: #111111;
+    font-size: 15;
+}
+div.PB 
+{
+    margin-top: -70px;
+    margin-left: 670px;
+    background: #111111;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+div.PBDW
+{
+    margin-top: -95px;
+    margin-left: 670px;
+    background: #111111;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+div.PBAF
+{
+    margin-top: -57px;
+    margin-left: 670px;
+    background: #111111;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+div.Habilidades 
+{
+    box-shadow: 0 10px 40px -10px linear-gradient(#a480ff, #532eaf);
+    border-radius: 100px;
+    background: #a480ff;
+    height: 30px;
+    width: 499;
+}
 /* FOOTER */
 
 footer{
