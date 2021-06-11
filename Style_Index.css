@@ -119,103 +119,73 @@ p.Descricao{
     color: #EBEBEB;
 }
 
-/*DESCRIÇÃO HABILIDADES*/
-
-h3{
+h3.Titulo
+{
     font-family: 'Overpass', sans-serif;
     color: white;
     padding-top: 30px;
-    font-size: 23;
+    font-size: 25;
     line-height: 1,3;
     letter-spacing: -1,5;
 }
 
-hr.Degrade2{
+hr.Degrade2
+{
     margin-top: -13px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border: none;
     border-radius: 15px;
-    width: 16rem;
+    width: 14rem;
     height: 4px;
     background-image: linear-gradient(90deg, #a480ff, #532eaf);
 }
 
-p.TituloDescricao2
-{
-    text-align: justify;
-    margin-left: 70px;
-    font-family: 'Overpass', sans-serif;
-    color: #a480ff;
-    font-size: 14;
-}
-
-p.Descricao2{
-    text-align: justify;
-    margin-left: 70px;
-    font-family: 'Overpass', sans-serif;
-    color: #EBEBEB;
-    font-size: 14;
-}
-
-/*LINHAS DE HABILIDADE*/
-p.Habilidade
-{
-    text-align: justify;
-    margin-top: 7px;
+a.A1_Caixa_Overlays
+{   
+    border-radius: 7px;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    background: url('img/Overlay_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition-duration: 0.3s;
     margin-left: 20px;
-    font-family: 'Overpass', sans-serif;
-    color: #111111;
-    font-size: 15;
 }
-div.PB 
+
+a.A1_Caixa_Overlays:hover
 {
-    margin-top: -70px;
-    margin-left: 670px;
-    background: #111111;
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
+    filter: drop-shadow(0 0 0.75rem#532eaf);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background: url('img/Overlay_img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a.A2_Caixa_Overlays
+{
+    border-radius: 7px;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    background: url('img/Social-Media_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    padding: 0 5px;
-    display: flex;
-    height: 40px;
-    width: 500px;
+    transition-duration: 0.3s;
+    margin-left: 20px;
 }
-div.PBDW
+
+a.A2_Caixa_Overlays:hover
 {
-    margin-top: -95px;
-    margin-left: 670px;
-    background: #111111;
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    padding: 0 5px;
-    display: flex;
-    height: 40px;
-    width: 500px;
-}
-div.PBAF
-{
-    margin-top: -57px;
-    margin-left: 670px;
-    background: #111111;
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    padding: 0 5px;
-    display: flex;
-    height: 40px;
-    width: 500px;
-}
-div.Habilidades 
-{
-    box-shadow: 0 10px 40px -10px linear-gradient(#a480ff, #532eaf);
-    border-radius: 100px;
-    background: #a480ff;
-    height: 30px;
-    width: 499;
+    filter: drop-shadow(0 0 0.75rem#532eaf);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background: url('img/Social-Media_img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* FOOTER */
