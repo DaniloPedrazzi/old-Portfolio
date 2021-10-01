@@ -1,212 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
 
-body{
-    background-color: #1c1c1c;
+:root {
+  --font-color: white;
+  --secundary-font-color: #ebebeb;
+  --bg-color: #1c1c1c;
+  --header-color: #111111;
+  --scrool-color: #111111;
 }
-body::-webkit-scrollbar 
-{
-    width: 7px;
+
+[data-theme="light"] {
+  --font-color: black;
+  --secundary-font-color: #131313;
+  --bg-color: #f7f7f7;
+  --header-color: #fdfdfd;
+  --scrool-color: #ccc;
 }
-  
-body::-webkit-scrollbar-track 
-{
-    background: #1c1c1c;
+
+body {
+  background-color: var(--bg-color);
 }
-  
-body::-webkit-scrollbar-thumb 
-{
-    background-color: #111111;
-    border-radius: 20px;
-    border: none;
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrool-color);
+  border-radius: 20px;
+  border: none;
 }
 
 /* HEADER */
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    background-color: #111111;
-    box-shadow: 0 0 0.5rem 0 rgb(17 17 17 / 70%);
-    cursor: default;
-    z-index: 10000;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: var(--header-color);
+  box-shadow: 0 0 0.5rem 0 rgb(17 17 17 / 70%);
+  cursor: default;
+  z-index: 10000;
 }
 
-nav{
-    position: absolute;
-    top: 0;
-    right: 2rem;
+nav {
+  position: absolute;
+  top: 0;
+  right: 2rem;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-li{
-    position: relative;
-    display: inline-block;
-    margin: 0 0.75rem;
-    padding: 0;
+li {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.75rem;
+  padding: 0;
 }
 
-img.Logo1
-{
-    position: absolute;
-    margin-top: 5px;
-    height: 55px;
-    transition-duration: 0.3s;
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 7%;
+  padding-top: 1.3%;
+}
+.theme-switch {
+  display: inline-block;
+  height: 27px;
+  position: relative;
+  width: 51px;
 }
 
-img.Logo2
-{
-    position: relative;
-    margin-top: 5px;
-    height: 55px;
-    opacity: 0;
-    transition-duration: 0.3s;
-}
-img.Logo2:hover
-{
-    opacity: 100;
+.theme-switch input {
+  display: none;
 }
 
-a.botoes_menu
-{
-    text-decoration: none;
-    font-family: 'Baloo 2', cursive;
-    color: white;
-    font-size: 18;
-    line-height: 1,3;
-    letter-spacing: -1,5;
-    transition-duration: 0.3s;
+.moon {
+  width: 20px;
+  margin-bottom: 16px;
+  margin-left: -28px;
+  filter: invert(100%) sepia(7%) saturate(1%) hue-rotate(350deg)
+    brightness(110%) contrast(98%);
 }
-a.botoes_menu:hover
-{
-    color: #a480ff;
+
+.sun {
+  width: 20px;
+  margin-bottom: 16px;
+  transform: translateX(63px);
+  opacity: 1;
+}
+
+.slider {
+  background-color: #1c1c1c;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #ebebeb;
+  bottom: 3.5px;
+  content: "";
+  height: 20px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 20px;
+}
+
+input:checked + .slider {
+  background-color: #ebebeb;
+}
+
+input:checked + .slider:before {
+  background-color: #1c1c1c;
+  transform: translateX(23px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+img.Logo1 {
+  margin-top: -3%;
+  position: absolute;
+  height: 55px;
+  transition-duration: 0.3s;
+}
+
+img.Logo2 {
+  margin-top: -3%;
+  position: relative;
+  height: 55px;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+img.Logo2:hover {
+  opacity: 100;
+}
+
+a.botoes_menu {
+  text-decoration: none;
+  font-family: "Baloo 2", cursive;
+  color: var(--font-color);
+  font-size: 18;
+  line-height: 1, 3;
+  letter-spacing: -1, 5;
+  transition-duration: 0.3s;
+}
+a.botoes_menu:hover {
+  color: #a480ff;
 }
 
 /* TITULO */
 
-h2.Titulo{
-    font-family: 'Overpass', sans-serif;
-    color: white;
-    padding-top: 110px;
-    font-size: 36;
-    line-height: 1,3;
-    letter-spacing: -1,5;
+h2.Titulo {
+  font-family: "Overpass", sans-serif;
+  color: var(--font-color);
+  padding-top: 110px;
+  font-size: 36;
+  line-height: 1, 3;
+  letter-spacing: -1, 5;
 }
 
-hr.Degrade{
-    margin-top: -13px;
-    margin-bottom: 40px;
-    border: none;
-    border-radius: 15px;
-    width: 12rem;
-    height: 4px;
-    background-image: linear-gradient(90deg, #a480ff, #532eaf);
+hr.Degrade {
+  margin-top: -13px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 15px;
+  width: 12rem;
+  height: 4px;
+  background-image: linear-gradient(90deg, #a480ff, #532eaf);
 }
 
 /* RESTO */
 
-table
-{
-    border-collapse: collapse;
-    width: 50%;
+table {
+  border-collapse: collapse;
+  width: 50%;
 }
 
-th.TituloTabela
-{
-    transform:translatex(12px);
-    font-size: 18;
-    color: white;
-    padding: 10px;
+th.TituloTabela {
+  transform: translatex(12px);
+  font-size: 18;
+  color: var(--font-color);
+  padding: 10px;
 }
 
-th.TituloPreçoTabela
-{
-    text-align: center;
-    transform:translatex(5px);
-    font-size: 18;
-    color: white;
-    padding: 10px;
+th.TituloPreçoTabela {
+  text-align: center;
+  transform: translatex(5px);
+  font-size: 18;
+  color: var(--font-color);
+  padding: 10px;
 }
 
-a.PreçoTabela
-{
-    text-decoration: none;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #a480ff;
-    transition-duration: 0.2s;
+a.PreçoTabela {
+  text-decoration: none;
+  font-size: 15;
+  font-family: "Overpass", sans-serif;
+  color: #a480ff;
+  transition-duration: 0.2s;
 }
 
-a.PreçoTabela:hover
-{
-    transition-duration: 0.2s;
-    color: #532eaf;
+a.PreçoTabela:hover {
+  transition-duration: 0.2s;
+  color: #532eaf;
 }
 
-th.PreçoTabela
-{
-    text-align: center;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #a480ff;
-    padding: 22px;
-    border-bottom: 0.09em solid #cecece;
+th.PreçoTabela {
+  text-align: center;
+  font-size: 15;
+  font-family: "Overpass", sans-serif;
+  color: #a480ff;
+  padding: 22px;
+  border-bottom: 0.09em solid var(--font-color);
 }
 
-th, td 
-{
-    text-align: left;
-    font-size: 15;
-    font-family: 'Overpass', sans-serif;
-    color: #cecece;
-    padding: 22px;
-    border-bottom: 0.09em solid #cecece;
+th,
+td {
+  text-align: left;
+  font-size: 15;
+  font-family: "Overpass", sans-serif;
+  color: var(--font-color);
+  padding: 22px;
+  border-bottom: 0.09em solid var(--font-color);
 }
 
-p.Descricao{
-    font-family: 'Overpass', sans-serif;
-    color: #EBEBEB;
-    font-size: 20px;
+p.Descricao {
+  font-family: "Overpass", sans-serif;
+  color: var(--secundary-font-color);
+  font-size: 20px;
 }
 
-p.Descricao2{
-    font-family: 'Overpass', sans-serif;
-    color: #EBEBEB;
+p.Descricao2 {
+  font-family: "Overpass", sans-serif;
+  color: var(--secundary-font-color);
 }
 
 /* FOOTER */
 
-footer{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3rem;
-    line-height: 3rem;
-    cursor: default;
-    z-index: 10000;
+footer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  cursor: default;
+  z-index: 10000;
 }
 
-p.footer{
-    font-family: 'Overpass', sans-serif;
-    color: #EBEBEB;
-    font-size: 12px;
+p.footer {
+  font-family: "Overpass", sans-serif;
+  color: var(--secundary-font-color);
+  font-size: 12px;
 }
 
-hr.footer
-{
-    margin-top: 40px;
-    background-image: linear-gradient(#ffff, #ffff);
-    border: none;
-    border-radius: 15px;
-    width: 90%;
-    height: 0.7px;
+hr.footer {
+  margin-top: 40px;
+  background-image: linear-gradient(var(--font-color), var(--font-color));
+  border: none;
+  border-radius: 15px;
+  width: 90%;
+  height: 0.7px;
 }
